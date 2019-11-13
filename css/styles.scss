@@ -1,30 +1,164 @@
 body {
 	font-family: sans-serif;
-	margin: 20px;
+	margin: 0 20px;
+	background-color: #f5f5f5;
+	  padding-bottom: 1rem;
+	}
 
-  .board {
-  	background: yellow;
-  	width: 300px;
-  	height: 300px;
-    margin-bottom: 20px;
+.container {
+	width: 1100px;
+	//height: 700px;
+	background-color: pink;
+	padding-top: 1rem;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  //padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+h2 {
+	margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+	font-family: 'Oleo Script', cursive;
+	color: #00e4ff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.notice {
+	background-color: #8D3B72;
+	border-radius: .3rem;
+	font-size: 1.1rem;
+	padding: 2px 0 2px;
+	margin-bottom: .7rem;
+	color: #fff;
+	border-style:double;
+	border-width: 2px;
+	border-color: #333;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+#loc {
+	font-size: 1.4rem;
+	font-style: italic;
+	color: #ffa400;
+}
+
+#foo {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #89d3c0;
+}
+
+#guy {
+	font-size: 1.5rem;
+	color: #ff7d00;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 1.5rem;
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 48em) {
+  .container {
+    max-width: 48rem;
   }
+}
+.container-narrow > hr {
+  margin: 1rem 0;
+}
 
-  .square {
-  	width: 100px;
-  	height: 100px;
-  	float: left;
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: .05rem solid #e5e5e5;
+	padding: 0rem 1rem;
+	background-color: pink;
+	margin-bottom: 1px;
+}
+.jumbotron .btn {
+  padding: .75rem;
+  font-size: 1.5rem;
+}
 
-    &.red {
-    	background: red;
-    }
+.location img {
+	border-radius: 0.3rem;
+	width: 600px;
+	border-style: solid;
+	border-width: 12px;
+	border-color: #ffa400;
+	border-radius: 0.5rem;
+}
 
-    &.green {
-    	background: green;
-    }
+.person img {
+	width: 240px;
+	border-style: solid;
+	border-width: 12px;
+	border-color: #ff7d00;
+	border-radius: 0.5rem;
+}
+
+.dish img {
+	width: 240px;
+	border-style: solid;
+	border-width: 12px;
+	border-color: #89d3c5;
+	border-radius: 0.5rem;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: .5rem 0;
+}
+
+.row.marketing {
+	display: flex;
+	padding: 5px 10px 5px 5px;
+	justify-content: space-evenly;
+  align-items: center;
+}
+.dish {
+	margin-left: -20px;
+}
+
+.col-md-3 {
+	// display: flex;
+	// padding: 0;
+	//justify-content: center;
+	//align-items: center;
+	//align-content: center;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
   }
-
-  .animal {
-    width: 100px;
-    height: auto;
+  /* Space out the masthead */
+  .header {
+		padding-top: 0.5rem;
+		margin-bottom: 0.5rem;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
   }
 }

@@ -8,7 +8,7 @@
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -18,27 +18,29 @@
   </head>
 
   <body>
+<div class="container">
+  <div class="jumbotron">
+    <div class="notice">Congratulations! You've won a trip to <span id="loc">Los Angeles</span> to make<br><span id="foo">Vegetarian Fava Bean Salad</span> with <span id="guy">Anthony Hopkins</span>!<br>Don't completely love your prize? Click below to reconfigure!!</div>
+    <div class="location"><img id="location-image" src="images/l-los-angeles-700.jpg"></div>
+  </div>
 
-    <h1>Week 7, Part 1</h1>
+  <div class="row marketing">
+    <div class="col-md-4">
+      <div class="dish"><img id="dish-image" src="images/f-fava-400.png"></div>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-md btn-primary" id="go">Change Out Your Prize</button>
+    </div>
+    <div class="col-md-4">
+      <div class="person"><img id="person-image" src="images/d-hopkins-400.jpg"></div>
+    </div>
+  </div>
 
-    <div class="board">
-			<div class="square alt"></div>
-			<div class="square"></div>
-			<div class="square alt"></div>
-			<div class="square"></div>
-			<div class="square alt"></div>
-			<div class="square"></div>
-			<div class="square alt"></div>
-			<div class="square"></div>
-			<div class="square alt"></div>
-		</div>
+  <footer class="footer">
+    <p>&copy; youareAwinner 2019</p>
+  </footer>
 
-		<p>
-      <img src="images/kitten.png" id="my_image" class="animal">
-    </p>
-
-		<button id="my_button" class="btn btn-primary">Button</button>
-
+</div>
 	</body>
 
 </html>
